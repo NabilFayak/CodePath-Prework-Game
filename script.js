@@ -18,6 +18,7 @@ function startGame(){
   //initialize game variables
   progress = 0;
   gamePlaying = true;
+  invalid_guesses = 0;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   playClueSequence();
