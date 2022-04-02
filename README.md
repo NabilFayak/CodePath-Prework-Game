@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 * [x] Playback speeds up on each turn
 * [ ] Computer picks a different pattern each time the game is played
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
-* [x] Game button appearance change goes beyond color (e.g. add an image)
+* [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [x] User has a limited amount of time to enter their guess on each turn
 
@@ -46,7 +46,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[I haven't used any outside resources for this project.]
+[StackOverflow, W3Schools]
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [A challenge I encountered was incorporating the three strike system for the user/player. At first, I was unsure with how to start tracking invalid guesses made by the player. After reviewing the Prework videos and code, I was able to learn more about how the guess and progress variables work. I decided that using a variable to keep track of invalid guesses would be a great starting place. Once I had my variable initialized, I needed to outline exactly how would the invalid guesses counter go up, and eventually hit 3, where it would be game over. I looked through the code again, and found the conditionals at the end of the script and decided to just add an "if" "else" statement to it. I ended up having to modify one of the original statements to not end the game on one bad guess, and instead each bad guess would increment the counter. The additional if statement I added just checked to see when the bad guess counter hits 3 and once it does, then it's finally game over. This was just one of the more difficult challenges I faced while building my project, but I was able to overcome it by reviewing the code I already had and the Prework materials CodePath provided already.]

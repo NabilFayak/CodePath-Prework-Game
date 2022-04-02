@@ -1,5 +1,4 @@
 // global constants
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
@@ -11,6 +10,9 @@ var tonePlaying = false;
 var volume = 0.5;  //must be between 0.0 and 1.0
 var guessCounter = 0;
 var invalid_guesses = 0;
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
+var timer; 
+var timeLeft = 60; //seconds
 
 
 
@@ -19,22 +21,45 @@ function startGame(){
   progress = 0;
   gamePlaying = true;
   invalid_guesses = 0;
+  clueHoldTime = 1000;
+  timer = setInterval(updateTimer, 1000);
+  timeLeft = 61;
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  document.getElementById("timer").classList.remove("hidden");
   playClueSequence();
 }
 function stopGame(){
+  clearInterval(timer);
   gamePlaying = false;
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
+  document.getElementById("timer").classList.add("hidden");
 }
 
 
 
+function updateTimer() {
+  timeLeft = timeLeft - 1;
+  if(timeLeft > 0){
+    document.getElementById("gameTime").innerHTML = timeLeft;
+  }else {
+    stopGame();
+    alert("Game Over. Looks like your time's run out!");
+  }
+}
+
+function showImg(btn) {
+  document.getElementById("imgBtn"+btn).classList.remove("hidden");
+}
+function hideImg(btn) {
+  document.getElementById("imgBtn"+btn).classList.add("hidden");
+}
+
 // Sound Synthesis Functions
 const freqMap = {
-  1: 55.2,
+  1: 155.2,
   2: 200,
   3: 372.4,
   4: 450.9,
@@ -81,11 +106,14 @@ function lightButton(btn){
 }
 function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
+  document.getElementById("imgBtn"+btn).classList.add("hidden");
+
 }
 
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
+    showImg(btn);
     playTone(btn,clueHoldTime);
     setTimeout(clearButton,clueHoldTime,btn);
   }
@@ -93,13 +121,17 @@ function playSingleClue(btn){
 
 function playClueSequence(){
   guessCounter = 0;
-  context.resume()
+  context.resume();
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
-    console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
-    setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-    delay += clueHoldTime 
+    console.log("play single clue: " + pattern[i] + " in " + delay + "ms");
+    setTimeout(playSingleClue,delay,pattern[i]); // set a timeout to play that clue
+    delay += clueHoldTime; 
     delay += cluePauseTime;
+    timeLeft += 2;
+    if(clueHoldTime>100){
+    clueHoldTime -= 30;
+    }
   }
 }
 
