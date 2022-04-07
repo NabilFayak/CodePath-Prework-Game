@@ -3,7 +3,7 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [2, 5, 4, 3, 2, 1, 2, 4];
+var pattern = [];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
@@ -18,6 +18,8 @@ var timeLeft = 60; //seconds
 
 function startGame(){
   //initialize game variables
+  pattern = []
+  createPattern(1,5)
   progress = 0;
   gamePlaying = true;
   invalid_guesses = 0;
@@ -38,6 +40,13 @@ function stopGame(){
   document.getElementById("timer").classList.add("hidden");
 }
 
+
+
+function createPattern(min, max) {
+  for (let i=0;i<=8;i++) {
+    pattern.push(Math.floor(Math.random() * (max - min + 1)) + min);
+  }
+}
 
 
 function updateTimer() {
