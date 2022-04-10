@@ -43,7 +43,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-
+![Game Design and Features Showcase](https://user-images.githubusercontent.com/72051470/162620639-0f10609c-e400-4d55-908f-b2c21b96e154.gif)
 ![Three Strikes and Personal Links Showcase](https://user-images.githubusercontent.com/72051470/162619067-48c068f4-5910-4584-9dc4-22a245ae6ef8.gif)
 
 
