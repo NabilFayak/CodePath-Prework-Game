@@ -43,8 +43,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](https://user-images.githubusercontent.com/72051470/161368531-81c594e2-589c-4b47-a78c-e7281705207b.gif)
-![](http://g.recordit.co/Kkecff8q00.gif)
+![Game Walkthrough and Design Showcase](https://user-images.githubusercontent.com/72051470/162618214-a10f262a-1e8c-49a8-89be-d22a40c77cd0.gif)
+![Three Strikes and Personal Links Showcase](http://g.recordit.co/2bqKceCwPl.gif)
 ![](gif3-link-here)
 ![](gif4-link-here)
 
@@ -59,7 +59,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 [One question I have about web development, now that I created this project, is whether webpages such as this could be created without the use of HTML, CSS, and JS? To clarify, I'd like to ask if instead of using three different languages; one for information, one for styling, and one for functionality-- could you create something like this with just the use of one language? Having to switch back and forth between the three languages became confusing and somewhat arduous as functionality and aesthetics increased, the amount of readjusting across the different files also drastically grew. I would love for there to be maybe a different library, framework, or language that could act as a one-stop shop for use cases such as this.]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[If I had a couple more hours to work on this project, I'd most likely spend them trying to improve the overall design and try to implement a highscore feature. It would be great if the player was greeted into the game with just the start button and once clicked then maybe the game buttons would fade into view, almost like an animation style event. Also once a player loses or wins, it would be great if there could be a label under the game with the highscore for the game as well as the player's name who acheived that high score. These are the two most realistic changes and improvements I believe I could make if there was a couple more hours left for me to complete this project. It was fun implementing the changes I was able to within the timeframe, but there's still plenty of ideas I have for how to take this game to the next level.]
+[If I had a couple more hours to work on this project, I'd most likely spend them trying to improve the overall design with some smoother animations or fading the screens in and out as well as try to implement a highscore feature. It would be great if the player was greeted into the game with just the start button and once clicked then maybe the game buttons would fade into view, almost like an animation style event. Also once a player loses or wins, it would be great if there could be a label under the game with the highscore for the game as well as the player's name who acheived that high score. These are the two most realistic changes and improvements I believe I could make if there was a couple more hours left for me to complete this project. It was fun implementing the changes I was able to within the timeframe, but there's still plenty of ideas I have for how to take this game to the next level.]
 
 
 
