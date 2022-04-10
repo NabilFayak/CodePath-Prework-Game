@@ -43,7 +43,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-Game Walkthrough and Design Showcase-
+![Lights-and-sound-game-walkthrough](https://user-images.githubusercontent.com/72051470/162618699-ed14b811-3cba-406b-a115-12c9ac8c25a2.gif)
 ![](http://g.recordit.co/2bqKceCwPl.gif)
 
 ## Reflection Questions
