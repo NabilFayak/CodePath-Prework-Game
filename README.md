@@ -45,10 +45,7 @@ The following **additional** features are implemented:
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 Game Walkthrough and Design Showcase-
 ![](https://user-images.githubusercontent.com/72051470/162618214-a10f262a-1e8c-49a8-89be-d22a40c77cd0.gif)
-Three Strikes and Personal Links Showcase-
 ![](http://g.recordit.co/2bqKceCwPl.gif)
-![](gif3-link-here)
-![](gif4-link-here)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
