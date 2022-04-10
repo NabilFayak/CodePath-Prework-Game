@@ -43,7 +43,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-<img src="http://g.recordit.co/2bqKceCwPl.gif"/>
+
+![Three Strikes and Personal Links Showcase](https://user-images.githubusercontent.com/72051470/162619067-48c068f4-5910-4584-9dc4-22a245ae6ef8.gif)
 
 
 ## Reflection Questions
