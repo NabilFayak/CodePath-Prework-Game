@@ -26,18 +26,26 @@ function startGame(){
   clueHoldTime = 1000;
   timer = setInterval(updateTimer, 1000);
   timeLeft = 61;
+  document.getElementById("gameName").classList.add("hidden");
+  document.getElementById("credits").classList.add("hidden");
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
   document.getElementById("timer").classList.remove("hidden");
+  document.getElementById("gameButtonArea").classList.remove("hidden");
+  document.getElementById("gameDescription").classList.remove("hidden");
   playClueSequence();
 }
 function stopGame(){
   clearInterval(timer);
   gamePlaying = false;
   // swap the Start and Stop buttons
+  document.getElementById("gameName").classList.remove("hidden");
+  document.getElementById("credits").classList.remove("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("timer").classList.add("hidden");
+  document.getElementById("gameButtonArea").classList.add("hidden");
+  document.getElementById("gameDescription").classList.add("hidden");
 }
 
 

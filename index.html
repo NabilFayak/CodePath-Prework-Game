@@ -14,23 +14,40 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/998a128a48.js" crossorigin="anonymous"></script>
     
   </head>
   
   <body>
     
     <!-- this is the start of content -->
-    <h1>
-      Light and Sound Memory Game
-    </h1>
     
-    <p>
+    <div id="startScreen">
+      <h1 id="gameName">
+        Light and Sound Memory Game
+      </h1>
+
+      <h2 id="credits">
+        by 
+        <a href="https://www.nabilfayak.com/" target="_blank">Nabil Fayak</a>
+        <strong>·</strong>
+        <ul class="wrapper">
+          <a href="https://github.com/nabilfayak" target="_blank">
+            <li class="icon github">
+              <span><i class="fab fa-github"></i></span>
+            </li>
+          </a>
+        </ul>
+      </h2>
+      
+      <button id="startBtn" onclick="startGame();">
+      Start
+      </button>
+    </div>
+    
+    <p id="gameDescription" class="hidden">
       Welcome to the game! Repeat back the pattern by pressing buttons.
     </p>
-    
-    <button id="startBtn" onclick="startGame();">
-      Start
-    </button>
     
     <button id="stopBtn" class="hidden" onclick="stopGame()">
       Stop
@@ -38,7 +55,7 @@
     
     <p id="timer" class="hidden">You have: <span id="gameTime">0</span> seconds remaining!</p>
     
-    <div id="gameButtonArea">
+    <div id="gameButtonArea" class="hidden">
       <button id="button1" onclick="guess(1)" onmousedown="startTone(1);showImg(1)" onmouseup="stopTone();hideImg(1)"><img src="https://cdn.glitch.global/605601dd-d341-44d8-9496-8a3a0c3e4f9a/musicNote.jpg?v=1648851759154" class="hidden" id="imgBtn1" width="150" height="180"/></button>
       <button id="button2" onclick="guess(2)" onmousedown="startTone(2);showImg(2)" onmouseup="stopTone();hideImg(2)"><img src="https://cdn.glitch.global/605601dd-d341-44d8-9496-8a3a0c3e4f9a/musicNote.jpg?v=1648851759154" class="hidden" id="imgBtn2" width="150" height="180"/></button>
       <button id="button3" onclick="guess(3)" onmousedown="startTone(3);showImg(3)" onmouseup="stopTone();hideImg(3)"><img src="https://cdn.glitch.global/605601dd-d341-44d8-9496-8a3a0c3e4f9a/musicNote.jpg?v=1648851759154" class="hidden" id="imgBtn3" width="150" height="180"/></button>
