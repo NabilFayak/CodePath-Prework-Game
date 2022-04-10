@@ -44,7 +44,6 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 Game Walkthrough and Design Showcase-
-![](https://user-images.githubusercontent.com/72051470/162618214-a10f262a-1e8c-49a8-89be-d22a40c77cd0.gif)
 ![](http://g.recordit.co/2bqKceCwPl.gif)
 
 ## Reflection Questions
